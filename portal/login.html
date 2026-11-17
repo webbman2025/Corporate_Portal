@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>登入 | 3Business 企業客戶平台</title>
+  <meta name="description" content="登入 3Business 企業客戶平台，管理戶口、服務及賬單。">
+  <link rel="alternate" hreflang="en-HK" href="login-en.html">
+  <link rel="alternate" hreflang="zh-HK" href="login.html">
+  <link rel="icon" href="../images-new/3business.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css-new/newmain.css">
+  <link rel="stylesheet" href="../css-new/portal-auth.css">
+</head>
+<body id="top" class="portal-auth">
+  <!-- UX prototype — no production authentication -->
+  <a class="skip" href="#main">跳至主要內容</a>
+
+  <header class="portal-header site-header">
+    <div class="wrap util-bar">
+      <a class="back-link" href="../index.html">← 返回 3Business</a>
+      <div class="util-actions">
+        <a class="lang" href="login-en.html" hreflang="en-HK" lang="en-HK">English</a>
+      </div>
+    </div>
+    <div class="wrap head">
+      <a class="logo" href="../index.html" aria-label="3Business 主頁">
+        <img src="../images-new/3business.png" alt="3Business">
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="portal-main">
+    <div class="wrap auth-split-wrap">
+      <div class="auth-split">
+        <aside class="auth-split-brand" aria-label="企業客戶平台簡介">
+          <div class="auth-split-brand-bg">
+            <img src="../images-new/d1-kv5.webp" alt="" aria-hidden="true" width="800" height="600">
+            <div class="auth-split-brand-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="auth-split-brand-copy">
+            <p class="eyebrow auth-eyebrow-light">企業客戶平台</p>
+            <h2 class="auth-brand-title">一站式管理你的企業戶口。</h2>
+            <ul class="auth-value-list">
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                </span>
+                <span>繳付賬單及下載發票</span>
+              </li>
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6"/></svg>
+                </span>
+                <span>查閱用量及管理服務</span>
+              </li>
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 14h4"/></svg>
+                </span>
+                <span>聯絡客戶服務經理取得支援</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="auth-split-form">
+          <div class="auth-form-inner">
+            <article class="auth-card" role="region" aria-labelledby="signin-heading">
+              <div class="auth-card-body">
+                <div id="authBannerLive" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+                <div id="authBanner" class="auth-banner" role="alert" hidden></div>
+
+                <p class="eyebrow auth-form-eyebrow">企業客戶平台</p>
+                <h1 id="signin-heading">登入 <span class="grad">企業客戶平台</span></h1>
+                <p class="auth-subtitle">3Business 企業客戶平台 — 管理戶口、服務及賬單。</p>
+
+                <form id="portalLoginForm" action="home.html" method="get" novalidate>
+                  <div class="field">
+                    <label for="userId">公司 / 用戶名稱</label>
+                    <input id="userId" name="userId" type="text" autocomplete="username" inputmode="text" required>
+                  </div>
+                  <div class="field field--password">
+                    <label for="password">密碼</label>
+                    <div class="field-input-row">
+                      <input id="password" name="password" type="password" autocomplete="current-password" required>
+                      <button type="button" class="toggle-password" id="togglePassword" aria-pressed="false">顯示</button>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary auth-submit" id="submitLogin">登入</button>
+                </form>
+
+                <div class="auth-trust" aria-label="保安及條款">
+                  <span class="auth-trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                    安全登入
+                  </span>
+                  <a href="https://corp.portal.three.com.hk/3BizOnline/jsp/v5/termsandconditions/chitermsconditions.htm" target="_blank" rel="noopener noreferrer">平台條款</a>
+                </div>
+
+                <nav class="auth-links" aria-label="戶口協助">
+                  <a href="forgot.html">忘記密碼？</a>
+                  <a href="#help">首次使用</a>
+                  <a href="https://web.three.com.hk/3business/contactus.html">需要協助？</a>
+                </nav>
+
+                <details class="auth-help" id="help">
+                  <summary id="help-summary">如何取得登入資料？</summary>
+                  <div class="auth-help-body">
+                    <p>你的<strong>客戶服務經理（ASM）</strong>會為公司安排企業客戶平台登入資料。如你尚未收到戶口資料，請聯絡 ASM 或企業客戶團隊。</p>
+                    <ul>
+                      <li>銷售：<a href="tel:+85221286886">2128 6886</a></li>
+                      <li>客戶服務：<a href="tel:+8521039">1039</a></li>
+                      <li>技術支援：<a href="tel:+85231668859">3166 8859</a></li>
+                    </ul>
+                    <p><a href="../contactus.html">聯絡我們</a> · <a href="mailto:3corpsales@hthk.com">3corpsales@hthk.com</a></p>
+                    <p>為保障戶口安全，在共用裝置上完成使用後請登出。</p>
+                  </div>
+                </details>
+
+                <div class="auth-legal">
+                  <a href="https://web.three.com.hk/terms/privacypolicy/index.html" target="_blank" rel="noopener noreferrer">私隱政策</a>
+                  <a href="https://web.three.com.hk/terms/is/index.html" target="_blank" rel="noopener noreferrer">條款及細則</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="wrap portal-footer-inner">
+      <p class="brand-note">© 3Business · 和記電訊香港</p>
+      <ul class="foot-mini-links">
+        <li><a href="../index.html">3Business 主頁</a></li>
+        <li><a href="../contactus.html">聯絡我們</a></li>
+        <li><a href="https://web.three.com.hk/terms/privacypolicy/index.html" target="_blank" rel="noopener noreferrer">私隱</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>window.PORTAL_AUTH = { lang: "zh", homeUrl: "home.html" };</script>
+  <script src="portal-auth.js"></script>
+</body>
+</html>

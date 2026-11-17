@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-HK" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sign in | 3Business Corporate Portal</title>
+  <meta name="description" content="Sign in to the 3Business corporate portal for business accounts in Hong Kong.">
+  <link rel="alternate" hreflang="en-HK" href="login-en.html">
+  <link rel="alternate" hreflang="zh-HK" href="login.html">
+  <link rel="icon" href="../images-new/3business.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css-new/newmain.css">
+  <link rel="stylesheet" href="../css-new/portal-auth.css">
+</head>
+<body id="top" class="portal-auth">
+  <!-- UX prototype — no production authentication -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="portal-header site-header">
+    <div class="wrap util-bar">
+      <a class="back-link" href="../index.html">← Back to 3Business</a>
+      <div class="util-actions">
+        <a class="lang" href="login.html" hreflang="zh-HK" lang="zh-HK">中文</a>
+      </div>
+    </div>
+    <div class="wrap head">
+      <a class="logo" href="../index.html" aria-label="3Business home">
+        <img src="../images-new/3business.png" alt="3Business">
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="portal-main">
+    <div class="wrap auth-split-wrap">
+      <div class="auth-split">
+        <aside class="auth-split-brand" aria-label="Corporate portal overview">
+          <div class="auth-split-brand-bg">
+            <img src="../images-new/d1-kv5.webp" alt="" aria-hidden="true" width="800" height="600">
+            <div class="auth-split-brand-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="auth-split-brand-copy">
+            <p class="eyebrow auth-eyebrow-light">Corporate portal</p>
+            <h2 class="auth-brand-title">Manage your business accounts in one place.</h2>
+            <ul class="auth-value-list">
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                </span>
+                <span>Pay bills &amp; download invoices</span>
+              </li>
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6"/></svg>
+                </span>
+                <span>Check usage &amp; manage services</span>
+              </li>
+              <li>
+                <span class="auth-value-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 10h16M8 14h4"/></svg>
+                </span>
+                <span>Get support from your account team</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="auth-split-form">
+          <div class="auth-form-inner">
+            <article class="auth-card" role="region" aria-labelledby="signin-heading">
+              <div class="auth-card-body">
+                <div id="authBannerLive" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+                <div id="authBanner" class="auth-banner" role="alert" hidden></div>
+
+                <p class="eyebrow auth-form-eyebrow">CORPORATE PORTAL</p>
+                <h1 id="signin-heading">Sign in to <span class="grad">corporate portal</span></h1>
+                <p class="auth-subtitle">3Business corporate portal — manage accounts, services and billing.</p>
+
+                <form id="portalLoginForm" action="home-en.html" method="get" novalidate>
+                  <div class="field">
+                    <label for="userId">Company / user ID</label>
+                    <input id="userId" name="userId" type="text" autocomplete="username" inputmode="text" required>
+                  </div>
+                  <div class="field field--password">
+                    <label for="password">Password</label>
+                    <div class="field-input-row">
+                      <input id="password" name="password" type="password" autocomplete="current-password" required>
+                      <button type="button" class="toggle-password" id="togglePassword" aria-pressed="false">Show</button>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary auth-submit" id="submitLogin">Sign in</button>
+                </form>
+
+                <div class="auth-trust" aria-label="Security and terms">
+                  <span class="auth-trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                    Secure sign-in
+                  </span>
+                  <a href="https://corp.portal.three.com.hk/3BizOnline/jsp/v5/termsandconditions/engtermsconditions.htm" target="_blank" rel="noopener noreferrer">Portal terms</a>
+                </div>
+
+                <nav class="auth-links" aria-label="Account help">
+                  <a href="forgot-en.html">Forgot password?</a>
+                  <a href="#help">First-time access</a>
+                  <a href="https://web.three.com.hk/3business/contactus-en.html">Need help?</a>
+                </nav>
+
+                <details class="auth-help" id="help">
+                  <summary id="help-summary">How do I get login details?</summary>
+                  <div class="auth-help-body">
+                    <p>Your <strong>account service manager (ASM)</strong> provisions your company login for the corporate portal. If you are new or have not received credentials, contact your ASM or our business team.</p>
+                    <ul>
+                      <li>Sales: <a href="tel:+85221286886">2128 6886</a></li>
+                      <li>Customer service: <a href="tel:+8521039">1039</a></li>
+                      <li>Technical support: <a href="tel:+85231668859">3166 8859</a></li>
+                    </ul>
+                    <p><a href="../contactus.html">Contact Us</a> · <a href="mailto:3corpsales@hthk.com">3corpsales@hthk.com</a></p>
+                    <p>For your security, sign out when you finish on a shared device.</p>
+                  </div>
+                </details>
+
+                <div class="auth-legal">
+                  <a href="https://web.three.com.hk/terms/privacypolicy/index-en.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                  <a href="https://web.three.com.hk/terms/is/index-en.html" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="wrap portal-footer-inner">
+      <p class="brand-note">© 3Business · Hutchison Telecommunications Hong Kong</p>
+      <ul class="foot-mini-links">
+        <li><a href="../index.html">3Business home</a></li>
+        <li><a href="../contactus.html">Contact</a></li>
+        <li><a href="https://web.three.com.hk/terms/privacypolicy/index-en.html" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>window.PORTAL_AUTH = { lang: "en", homeUrl: "home-en.html" };</script>
+  <script src="portal-auth.js"></script>
+</body>
+</html>
