@@ -18,6 +18,11 @@ Post-login hub, forgot-password pages, and full `npm run revamp` flow remain in:
 
 ## Deploy (Vercel)
 
+| | URL |
+|---|-----|
+| GitHub | https://github.com/webbman2025/Corporate_Portal |
+| Production | https://corporateportal-dusky.vercel.app |
+
 Root `/` serves `login-en.html`. Traditional Chinese: `/login.html`.
 
 ## Preview locally
